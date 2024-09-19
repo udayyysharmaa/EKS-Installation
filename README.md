@@ -61,3 +61,10 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```bash
 eksctl create cluster --name mycluster --region ap-south-1 --node-type t2.large --nodes-min 2 --nodes-max 2
 ```
+
+# Delete a eksctl Cluster
+
+```bash
+eksctl delete cluster --name mycluster --region ap-south-1 
+```
+
