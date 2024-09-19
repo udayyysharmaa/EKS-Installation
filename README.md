@@ -55,10 +55,9 @@ kubectl: OK
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```
 
-### If you do not have root access on the target system, you can still install kubectl to the ~/.local/bin directory:
+
+# Create a eksctl Cluster
 
 ```bash
-chmod +x kubectl
-mkdir -p ~/.local/bin
-mv ./kubectl ~/.local/bin/kubectl
+eksctl create cluster --name mycluster --region ap-south-1 --node-type t2.large --nodes-min 2 --nodes-max 2
 ```
